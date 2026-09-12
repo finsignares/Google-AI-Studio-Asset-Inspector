@@ -6,7 +6,8 @@ import { createServer as createViteServer } from "vite";
 
 dotenv.config();
 
-export const app = express();
+const app = express();
+export default app;
 const PORT = 3000;
 
 // Generous payload limit to receive high-res camera frames from mobile devices
@@ -383,7 +384,7 @@ async function startServer() {
   }
 
 app.listen(PORT, "0.0.0.0", () => {
-    console.log(Asset Inspector server running on http://0.0.0.0:${PORT});
+    console.log("Asset Inspector server running on http://0.0.0.0:" + PORT);
   });
 }
 

@@ -1,0 +1,12 @@
+{
+  "name": "Device & Asset Video Inspector",
+  "description": "Inspect and audit electric and electronic devices using mobile video. Identifies device type, physical status, functionality, and accessories completeness, detecting whether additional video or info is required.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+

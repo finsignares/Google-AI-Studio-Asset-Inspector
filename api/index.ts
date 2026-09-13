@@ -86,7 +86,7 @@ Analyze the provided device images and identify:
 8. Accessories visible
 9. Information that remains unverified
 
-${additionalNotes ? Inspector notes: ${additionalNotes} : ""}
+${additionalNotes ? `Inspector notes: ${additionalNotes}` : ""}
 
 ${
   isFollowUp

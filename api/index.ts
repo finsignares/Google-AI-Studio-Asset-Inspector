@@ -118,11 +118,11 @@ Analyze all the provided sequential video frames thoroughly and systematically e
    - Set "isAuditComplete" to FALSE if critical angles (e.g. bottom label/serial number, ports, power-on demonstration, charger) are missing or obscured.
    - If false, list specific, highly actionable "missingRequirements" explaining EXACTLY what angle, test, or accessory the user needs to record in an additional follow-up video clip or provide as additional information.
 
-${additionalNotes ? User inspector notes: "${additionalNotes}" : ""}
+${additionalNotes ? `User inspector notes: "${additionalNotes}"` : ""}
 
 ${
   isFollowUp
-    ? Note: This is an additional follow-up video submitted to resolve previous gaps. Previous audit summary: "${previousReportSummary || ""}". Synthesize the new angles and tests with the previous assessment to update the completeness state.
+    ? `Note: This is an additional follow-up video submitted to resolve previous gaps. Previous audit summary: "${previousReportSummary || ""}". Synthesize the new angles and tests with the previous assessment to update the completeness state.`
     : ""
 }`;
 
